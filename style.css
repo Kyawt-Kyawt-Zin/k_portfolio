@@ -1,3 +1,21 @@
+/* font changing  */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #390452;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -23,12 +41,6 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-#navbar_main {
-  background-color: #8d629a33;
-  position: sticky;
-  top: 0;
 }
 
 .btn {
