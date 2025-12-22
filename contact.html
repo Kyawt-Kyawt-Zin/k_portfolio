@@ -24,6 +24,16 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css  -->
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
@@ -72,7 +82,7 @@
               <a class="nav-link active" href="#">Contact</a>
             </li>
           </ul>
-          <!-- Button -->
+          <!-- Button
           <div class="nav-item ms-auto">
             <button
               class="btn btn-outline-light ms-5"
@@ -80,7 +90,7 @@
             >
               Wanna know more about me?
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
     </nav>
@@ -100,7 +110,7 @@
             <i class="bi bi-record-fill me-1"></i> Available for Opportunities
           </div>
 
-          <p class="lead text-dark fw-semibold">
+          <p class="lead text-dark fw-semibold py-3">
             I am an experienced Web Developer focused on crafting
             high-performance, scalable web solutions.
           </p>
@@ -164,17 +174,23 @@
                     placeholder="name@company.com"
                   />
                 </div>
+
                 <div class="col-12">
-                  <label class="form-label small fw-bold"
+                  <label class="form-label small fw-bold text-dark"
                     >Wanna offer for</label
                   >
-                  <select class="form-select bg-light border-0">
-                    <option selected>Full-time Role</option>
-                    <option>Freelance Project</option>
-                    <option>Collaboration</option>
-                    <option>General Inquiry</option>
+                  <select class="form-select bg-light border-0 py-3" required>
+                    <option value="" selected disabled hidden>
+                      Choose your offer
+                    </option>
+
+                    <option value="full-time">Full-time Role</option>
+                    <option value="freelance">Freelance Project</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="inquiry">General Inquiry</option>
                   </select>
                 </div>
+
                 <div class="col-12">
                   <label class="form-label small fw-bold">Message</label>
                   <textarea
