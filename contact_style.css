@@ -9,33 +9,3 @@
   border-color: #03153f;
   box-shadow: 0 0 0 0.25rem rgba(111, 78, 55, 0.15);
 }
-
-.icon-box {
-  width: 50px;
-  height: 50px;
-  background-color: rgba(61, 29, 6, 0.1);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@keyframes pulse-glow {
-  0% {
-    box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.7);
-  }
-  70% {
-    /* The spread of the glow - 10px looks very professional */
-    box-shadow: 0 0 0 10px rgba(13, 110, 253, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(13, 110, 253, 0);
-  }
-}
-
-.status-glow {
-  animation: pulse-glow 2s infinite;
-  border-radius: 50px; /* Ensures the glow follows the rounded shape */
-  display: inline-flex;
-  align-items: center;
-}
