@@ -38,7 +38,7 @@ h6,
     radial-gradient(circle at bottom left, #662c6e, transparent), #ffffff;
 }
 
-button {
+.btn-login {
   background: radial-gradient(circle at top right, #326a92, transparent),
     radial-gradient(circle at bottom left, #662c6e, transparent), #ffffff;
 }
