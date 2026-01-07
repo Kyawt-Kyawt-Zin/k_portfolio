@@ -1,7 +1,14 @@
 /* font changing  */
-body {
+body,
+#about-title,
+#about-text {
   font-family: "Open Sans", sans-serif;
-  color: #333;
+  color: white;
+}
+
+#navbar_main {
+  background: radial-gradient(circle at top right, #326a92, transparent),
+    radial-gradient(circle at bottom left, #662c6e, transparent), #ffffff;
 }
 
 h1,
@@ -13,7 +20,13 @@ h6,
 .navbar-brand {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #390452;
+  color: white;
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: white;
 }
 
 body {
@@ -22,6 +35,7 @@ body {
   background: radial-gradient(circle at top right, #326a92, transparent),
     radial-gradient(circle at bottom left, #662c6e, transparent), #ffffff;
   background-attachment: fixed;
+  color: white;
 }
 
 /* animation */
@@ -48,15 +62,35 @@ body {
     radial-gradient(circle at bottom left, #662c6e, transparent), #ffffff;
   background-attachment: fixed;
 }
+
 footer {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+
+  .page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    flex: 1; /* pushes footer to bottom */
+  }
+
+  .footer {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 1rem;
+  }
 }
 
 .social-icon {
   font-size: 2rem;
-  color: #64748b;
+  color: #e2e7ee;
   transition: all 0.3s ease;
   text-decoration: none;
 }
