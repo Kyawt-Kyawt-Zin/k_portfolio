@@ -70,16 +70,6 @@ footer {
     margin: 0;
   }
 
-  .page-wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .content {
-    flex: 1; /* pushes footer to bottom */
-  }
-
   .footer {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
