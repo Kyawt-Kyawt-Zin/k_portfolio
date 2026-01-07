@@ -78,6 +78,10 @@ footer {
   }
 }
 
+.pb-70 {
+  padding-bottom: 70px;
+}
+
 .social-icon {
   font-size: 2rem;
   color: #e2e7ee;
