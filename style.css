@@ -103,3 +103,14 @@ footer {
 .bi-linkedin:hover {
   color: #0a66c2;
 }
+
+@media (max-width: 767px) {
+  .content-div {
+    padding-bottom: 100px;
+    width: 90%;
+    margin: auto;
+  }
+  .email-font {
+    font-size: 13px;
+  }
+}
