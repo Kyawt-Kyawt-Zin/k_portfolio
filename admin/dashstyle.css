@@ -1,0 +1,62 @@
+/* ===== Layout base ===== */
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* prevent body scrolling */
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 25%; /* matches col-lg-3 */
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* ===== Main right area ===== */
+.main {
+  margin-left: 25%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Top navbar ===== */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* ===== Scrollable content ===== */
+.content-area {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 70px; /* space for footer if needed */
+}
+
+/* ===== Mobile fix ===== */
+@media (max-width: 991px) {
+  body {
+    overflow: auto;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .main {
+    margin-left: 0;
+    height: auto;
+  }
+
+  .content-area {
+    overflow: visible;
+  }
+}
