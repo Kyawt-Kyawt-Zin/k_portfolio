@@ -19,7 +19,7 @@ body {
 /* ===== Main right area ===== */
 .main {
   margin-left: 25%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
 }
@@ -32,6 +32,20 @@ body {
   border-bottom: 1px solid #dee2e6;
 }
 
+.map-container {
+  max-width: 100%;
+}
+
+.map-container img {
+  object-fit: contain;
+}
+
+@media (min-width: 992px) {
+  .map-container {
+    max-width: 420px; /* desktop size */
+  }
+}
+
 /* ===== Scrollable content ===== */
 .content-area {
   flex: 1;
@@ -39,12 +53,11 @@ body {
   padding-bottom: 70px; /* space for footer if needed */
 }
 
-/* ===== Mobile fix ===== */
+/* mobile fix  */
 @media (max-width: 991px) {
   body {
     overflow: auto;
   }
-
   .sidebar {
     position: relative;
     width: 100%;
